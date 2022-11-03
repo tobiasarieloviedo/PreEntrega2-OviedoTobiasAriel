@@ -1,0 +1,82 @@
+body{
+    background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQx5sr5YBXRpBkqlL7q1lKMqBeU16l4sKpRVVTk5J58__ELunc-ldDFiEXZ9DejElzBaKg&usqp=CAU") ;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+header{
+    height: 140px;
+    background-color: rgb(99, 186, 236);
+    justify-content:space-between;
+    display: flex;
+    }
+    
+    .logo{
+        height: 150px;
+        display: block;
+        margin: auto;
+    }
+
+main{
+    text-align: center;
+}
+
+h1{
+    font-size: 65px;
+}
+h2{
+    background-color: blue;
+    font-size: 40px;
+}
+h3{
+    background-color: blueviolet;
+    font-size: 28px;
+    font-weight: 900;
+}
+
+p{
+    color: rgb(110, 1, 1);
+    font-size: large;
+    font-weight: 900;
+}
+
+.diagrama{
+    height: 200px;
+}
+
+.calendario{
+    height: 200px;
+}
+
+.circular{
+    height: 300px;
+}
+
+.barras{
+    height: 300px;
+}
+
+.video{
+    height: 250px;
+}
+
+ul{
+    display: inline;
+    font: size 250%;
+    font-weight: 900;
+    list-style: none;
+}
+
+.lulu{
+    display: inline;
+    padding: 2px 7px 2px 7px;
+}
+
+li{
+    font-size: 130%;
+}
+
+.menu{
+    font-size:large;
+    font-weight: 900;
+    text-transform: uppercase;
+}

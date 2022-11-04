@@ -4,18 +4,19 @@ body{
 }
 
 header{
-    height: 140px;
-    background-color: rgb(99, 186, 236);
+    height: 200px;
+    background: linear-gradient(to bottom, red, purple) ;
     justify-content:space-between;
     display: flex;
     }
     
-    .logo{
-        background-color: blueviolet;
-        border: 6px black solid;
-        height: 165px;
-        display: block;
-        margin: auto;
+.logo{
+    display: flex;
+    background-color: blueviolet;
+    border: 6px black solid;
+    height: 300px;
+    display: block;
+    margin:auto;
     }
 
 main{
@@ -26,17 +27,17 @@ h1{
     font-size: 65px;
 }
 h2{
-    background-color: blue;
+    background-color: rgb(81, 218, 165);
     font-size: 40px;
 }
 h3{
-    background-color: blueviolet;
+    background-color: rgb(49, 243, 81);
     font-size: 28px;
     font-weight: 900;
 }
 
 p{
-    color: rgb(110, 1, 1);
+    color: rgb(29, 3, 36);
     font-size: large;
     font-weight: 900;
 }
@@ -63,8 +64,8 @@ p{
 
 ul{
     display: inline;
-    font: size 250%;
-    font-weight: 900;
+    font: size 150%;
+    font: weight 900px;;
     list-style: none;
 }
 
@@ -83,11 +84,21 @@ li{
     text-transform: uppercase;
 }
 
-.initiate{
-    display: inline;
+.slide{
+    margin-top: 1px;
 }
 
-.carousel-inner {
-    height: 200px;
-    image-resolution: 800PX;
+.slide img{
+    height: 300px;
+    width: 20px;
+}
+
+.beginning{
+    display: inline-flex;
+    position: static;
+}
+
+.mcr{
+    height: 300px;
+    object-fit: contain;
 }

@@ -5,18 +5,23 @@ body{
 
 header{
     height: 200px;
-    background: linear-gradient(to bottom, red, purple) ;
-    justify-content:space-between;
-    display: flex;
+    background: linear-gradient(to bottom, rgb(211, 93, 226), rgb(226, 171, 226)) ;
     }
     
 .logo{
     display: flex;
+    position: absolute;
+    left: 300px;
     background-color: blueviolet;
-    border: 6px black solid;
     height: 300px;
-    display: block;
     margin:auto;
+    
+    }
+
+    .menuArriba{
+        position: relative;
+        left: 1300px;
+        bottom: 75px;
     }
 
 main{
@@ -25,10 +30,13 @@ main{
 
 h1{
     font-size: 65px;
+    position: relative;
+    left: 655px;
 }
 h2{
     background-color: rgb(81, 218, 165);
     font-size: 40px;
+    border: 2px black solid;
 }
 h3{
     background-color: rgb(49, 243, 81);
@@ -84,21 +92,32 @@ li{
     text-transform: uppercase;
 }
 
-.slide{
-    margin-top: 1px;
-}
-
-.slide img{
-    height: 300px;
-    width: 20px;
-}
-
 .beginning{
     display: inline-flex;
     position: static;
+
 }
 
 .mcr{
     height: 300px;
     object-fit: contain;
+
+}
+
+.carouselUno {
+    height: 300px;
+    width: 600px;
+    position:relative;
+    left: 300px;
+}
+
+.carouselDos {
+    height: 300px;
+    width: 600px;
+    position: relative;
+    right: 0px;
+}
+
+footer {
+    background-color: rgb(228, 19, 36);
 }

@@ -1,5 +1,5 @@
 body{
-    background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQx5sr5YBXRpBkqlL7q1lKMqBeU16l4sKpRVVTk5J58__ELunc-ldDFiEXZ9DejElzBaKg&usqp=CAU") ;
+    background-image: url("http://3.bp.blogspot.com/-QdxgxGfqt6o/Vdsh5CwnRKI/AAAAAAAEUao/3YqZ0zMdhhw/s1600/15%2B%25281%2529.jpg") ;
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
     flex-wrap: wrap;
 }
@@ -145,7 +145,19 @@ footer {
         height: 200px;
         background: linear-gradient(to bottom, rgb(160, 68, 170), rgba(4, 184, 85, 0.452));
     }
-   
+
+    .medialinkUno{
+        font-size: 35px;
+        display: inline-flex;
+        gap: 150px;
+    }
+
+    .medialinkDos{
+        font-size: 35px;
+        display: inline-flex;
+        gap: 270px;
+    }
+
 
 
     

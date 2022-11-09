@@ -2,6 +2,7 @@ body{
     background-image: url("http://3.bp.blogspot.com/-QdxgxGfqt6o/Vdsh5CwnRKI/AAAAAAAEUao/3YqZ0zMdhhw/s1600/15%2B%25281%2529.jpg") ;
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
     flex-wrap: wrap;
+    width: 100%;
 }
 
 header{
@@ -53,49 +54,15 @@ p{
     height: 250px;
 }
 
-.beginning{
-    display: inline-flex;
-    position: static;
-    flex-wrap: wrap;
-}
-
-.mcr{
-    height: 300px;
-    object-fit: contain;
-}
-
-.carouselUno {
-    height: 300px;
-    width: 600px;
-    position:relative;
-    left: 300px;
-}
-
-.carouselDos {
-    height: 300px;
-    width: 600px;
-    position: relative;
-    right: 0px;
-}
-
 footer {
     background-color: rgb(0, 0, 0);
 }
 
 .navbar {
-    font-size: 35px;
+    font-size: 25px;
     background: linear-gradient(rgb(164, 247, 247),rgb(0, 87, 87));
-    width: 1300px;
+    max-width: 100%;
 }
-
-.logo{
-    display: flex;
-    position: absolute;
-    left: 300px;
-    background-color: blueviolet;
-    height: 300px;
-    margin:auto;
-    }
 
 .logoServicios{
     display: flex;
@@ -146,18 +113,108 @@ footer {
         background: linear-gradient(to bottom, rgb(160, 68, 170), rgba(4, 184, 85, 0.452));
     }
 
+    .contenedorMaestro{
+        display: grid;
+        grid-template-areas:
+        "instagram instagram facebook facebook"
+        "instagram instagram facebook facebook"
+        "whatsapp whatsapp mail mail"
+        "whatsapp whatsapp mail mail";
+    }
+
     .medialinkUno{
-        font-size: 35px;
-        display: inline-flex;
-        gap: 150px;
+        background: linear-gradient(to top, #dd2a7b, #8134af, #515bd4);
+        grid-area: instagram;
+        font-size: 25px;
+        border: 3px rgb(23, 0, 128) solid;
     }
 
     .medialinkDos{
-        font-size: 35px;
-        display: inline-flex;
-        gap: 270px;
+        background: linear-gradient(to top, #221fd3, #ffffff, #515bd4);
+        grid-area: facebook;
+        font-size: 25px;
+        border: 3px rgb(23, 0, 128) solid;
     }
 
+    .medialinkTres{
+        background: linear-gradient(to top, #0dff19, #fefbff);
+        grid-area: whatsapp;
+        font-size: 25px;
+        border: 3px rgb(23, 0, 128) solid;
+    }
+
+    .medialinkCuatro{
+        background: linear-gradient(to top, #75bddf, #888ea0, #bbbdd3);
+        grid-area: mail;
+        font-size: 25px;
+        border: 3px rgb(23, 0, 128) solid;
+    }
+
+    .carouselUno {
+        max-height: 100%;
+        max-width: 100%;
+    }
+    
+    .carouselDos {
+        max-height: 100%;
+        max-width: 100%;
+    }
+
+    .contenedorPadre{
+        display: grid;
+        grid-template-areas:
+        "carruselUno logoOne carruselDos";
+    }
+
+    .carruselUno{
+        grid-area: carruselUno
+    }
+
+    .carruselDos{
+        grid-area: carruselDos;
+    }
+
+    .logoOne{
+        grid-area: logoOne;
+        
+    }
+
+    .logo{
+        height: 100%;
+        max-width: 100%;
+        }
+
+    .contenedorInicio{
+        display: grid;
+        grid-template-areas:
+        "tituloInicio men men";
+    }
+
+    .tituloindex{
+        grid-area: tituloInicio;
+    }
+
+    .navbar{
+        grid-area: men;
+    }
+
+.contenedorDiosInicio{
+    max-width: 100%;
+}
+
+.contenedorPadre{
+    width: 100%;
+    height: 100%
+    ;
+} 
+
+.principalInicio{
+    width: 100%;
+}
+
+.footerInicio{
+    width: 100%;
+}
 
 
     

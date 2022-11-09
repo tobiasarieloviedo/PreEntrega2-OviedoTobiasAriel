@@ -16,6 +16,8 @@ main{
 
 h1{
     font-size: 65px;
+    max-height: 100%;
+    ax-width: 100%;
 }
 h2{
     background: linear-gradient(to bottom, rgb(87, 23, 94), rgba(185, 16, 16, 0.986) );
@@ -95,12 +97,8 @@ footer {
     }
 
 .logoContacto{
-    display: flex;
-    position: absolute;
-    top: 0px;
-    left: 1000px;
-    height: 197px;
-    margin:auto;
+    max-height: 50%;
+    max-width: 100%;
     }
 
     .contactoHeader{
@@ -116,38 +114,50 @@ footer {
     .contenedorMaestro{
         display: grid;
         grid-template-areas:
-        "instagram instagram facebook facebook"
-        "instagram instagram facebook facebook"
-        "whatsapp whatsapp mail mail"
-        "whatsapp whatsapp mail mail";
+        "instagram"
+        "facebook"
+        "whatsapp"
+        "mail";
+        max-height: 100%;
+        max-width: 100%;
+        margin: auto;
+        gap: 5px;
     }
 
     .medialinkUno{
         background: linear-gradient(to top, #dd2a7b, #8134af, #515bd4);
         grid-area: instagram;
-        font-size: 25px;
+        font-size: 20px;
         border: 3px rgb(23, 0, 128) solid;
+        max-height: 100%;
+        max-width: 100%;
     }
 
     .medialinkDos{
-        background: linear-gradient(to top, #221fd3, #ffffff, #515bd4);
+        background: linear-gradient(to top, #221fd3, #4f4a8f, #464c8f);
         grid-area: facebook;
-        font-size: 25px;
+        font-size: 20px;
         border: 3px rgb(23, 0, 128) solid;
+        max-height: 100%;
+        max-width: 100%;
     }
 
     .medialinkTres{
         background: linear-gradient(to top, #0dff19, #fefbff);
         grid-area: whatsapp;
-        font-size: 25px;
+        font-size: 20px;
         border: 3px rgb(23, 0, 128) solid;
+        max-height: 100%;
+        max-width: 100%;
     }
 
     .medialinkCuatro{
-        background: linear-gradient(to top, #75bddf, #888ea0, #bbbdd3);
+        background: linear-gradient(to top, #690d69, #3c0b3d, #960f6d);
         grid-area: mail;
-        font-size: 25px;
+        font-size: 18px;
         border: 3px rgb(23, 0, 128) solid;
+        max-height: 100%;
+        max-width: 100%;
     }
 
     .carouselUno {
@@ -204,8 +214,7 @@ footer {
 
 .contenedorPadre{
     width: 100%;
-    height: 100%
-    ;
+    height: 100%;
 } 
 
 .principalInicio{
@@ -215,6 +224,38 @@ footer {
 .footerInicio{
     width: 100%;
 }
+
+.contenedorDiosContacto{
+   max-width: 100%; 
+   max-height: 100%;
+}
+
+.contactoHeader{
+    display: grid;
+    grid-template-areas:
+    "logo titulo"
+    "logo";
+    max-width: 100%;
+    max-height: 100%;
+    
+}
+
+.logo{
+    grid-area: logo;
+}
+
+.tituloPrincipal{
+    grid-area: titulo;
+}
+
+.mediado{
+    max-width: 100%; 
+    max-height: 100%;
+}
+
+
+
+
 
 
     
